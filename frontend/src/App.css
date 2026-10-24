@@ -1,0 +1,99 @@
+.screen {
+  min-height: 100dvh;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-color: #1b1b2f; /* color de respaldo mientras carga la imagen */
+}
+
+.screen--menu {
+  background-image: url('/backgrounds/menu.png');
+  justify-content: center;
+}
+
+.screen--crossword {
+  background-image: url('/backgrounds/crucigrama.png');
+}
+
+.menu {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.menu h1 {
+  text-align: center;
+  margin: 0 0 8px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.menu-note {
+  text-align: center;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.menu-btn {
+  display: block;
+  padding: 18px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu-btn:active {
+  transform: scale(0.98);
+}
+
+.menu-btn--soon {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Centra el menú en el espacio disponible y deja el footer abajo */
+.menu {
+  margin: auto 0;
+}
+
+.menu-footer {
+  width: 100%;
+  max-width: 380px;
+  margin-top: 28px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.menu-footer p {
+  margin: 0 0 14px;
+}
+
+.menu-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.menu-footer a {
+  color: #ffb3d1;
+  font-weight: 700;
+}
+
+.menu-footer .disclaimer {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  text-align: justify;
+}
